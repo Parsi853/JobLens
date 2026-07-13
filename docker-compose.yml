@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    volumes: ["./artifacts:/app/artifacts:ro"]
+  ui:
+    build: .
+    command: streamlit run src/joblens/ui/app.py --server.address=0.0.0.0
+    environment: ["JOBLENS_API_URL=http://api:8000"]
+    ports: ["8501:8501"]
+    volumes: ["./artifacts:/app/artifacts:ro"]
+    depends_on: [api]
+

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "mae": 13094.117727044279,
+    "median_absolute_error": 11372.843710372894,
+    "mdape_percent": 7.238975627494648,
+    "r2": 0.877294564718559
+  },
+  "baseline": {
+    "mae": 38843.77777777778,
+    "median_absolute_error": 38794.5,
+    "mdape_percent": 21.899045089185222,
+    "r2": -0.008469348084226391
+  },
+  "split_method": "chronological",
+  "rows": {
+    "train_salary": 42,
+    "evaluation_salary": 18
+  }
+}
